@@ -159,6 +159,8 @@ span{
     color: #ec8129;
     letter-spacing: 1px;
   }
+
+   
   
   .faq-drawer__trigger:checked
     + .faq-drawer__title
@@ -214,7 +216,7 @@ span{
     width: 300px;
     height: 300px;
     left: 45px;
-    top: 451px;
+    top: 490px;
   
    
 }
@@ -223,6 +225,7 @@ span{
   display: none;
 
 }
+
 
 
 
