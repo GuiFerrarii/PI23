@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 
 
 *{
@@ -15,18 +16,46 @@ body {
     
 }
 
-.icones{
-    max-width: 100%;
-    border: 1px red solid;
-    display: flex;
-    
-    padding: 0rem 50rem 0rem 50rem;
-    margin-right: rem;
-   
+.table table, th, td {
+    border: 1px solid black;
+    padding: 15px;
+    margin-left: 30%;
+  }
 
-    
+.table h1{
+    color: #434141;
+    margin-left: 5.2%;
+    margin-top: 3%;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    font-family: 'Nunito', sans-serif;
 }
 
+.icones{
+    max-width: 10%;
+
+ 
+     
+    display: flex;
+    margin-left: 51rem;
+    padding: 0rem;
+    
+    margin-top: -4rem;
+}
+
+.icones img{
+    
+    display: block;
+    margin-left: 0.9rem;
+    padding: 0rem;
+   
+
+}
+
+ #add{
+    margin-top: -0.1rem;
+}
 
 
 
@@ -37,21 +66,26 @@ body {
 form {
     max-width: 50%;
     margin-top: 13rem;
-    position: relative;
     margin-left: 6rem;
-    
-    
   }
+
   
   .input-group {
-    position: relative;
+ 
+   
+    max-width: 73%;
+    
+ 
+    
+    
+    
     
   }
   
  
   input {
-    width: 68%;
-    height: 20px;
+    width: 97%;
+    height: 18px;
     padding: 31px 0px 28px 22px;
     outline: none;
     font-size: 18px;
@@ -67,7 +101,7 @@ form {
 
   input::placeholder{
     bottom: 0px;
-    position: relative;
+    
     color: #434141;
   }
   
@@ -76,7 +110,7 @@ form {
   }
   
   input:focus + label {
-    transform: scale(1.05) translatey(-50%);
+    transform: scale(1.05) translatey(-5%);
     color: #000000;
   }
 
@@ -84,9 +118,10 @@ form {
     background-color: #F4F4F4;
     padding: 18px 24px 6px 12px;
     position: absolute;
-    width: 71.7%;
+    width: 31%;
     margin-top: 0px;
     border-top: none;
+    
   }
   
   .suggestion-list.hidden {
@@ -200,6 +235,22 @@ nav .icon-burger .line {
     transition: all .5s ease-in-out;
 }
 @media screen and (max-width: 768px) {
+
+    .icones{
+        margin-left: 25rem;
+        margin-top: 1rem;
+        display: grid;
+    }
+
+    input {
+        width: 100%;
+    height: 20px;
+    margin-left: 1rem;
+    margin-top: -4rem;
+        
+    }
+
+
     nav .logo {
         float: none;
         width: auto;
