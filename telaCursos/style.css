@@ -16,6 +16,23 @@ body {
     
 }
 
+button {
+    position: absolute;
+    left: 39%;
+    top: 25%;
+    transform: translatey(-15%);
+    color: rgba(0, 0, 0, 0.08);
+    transition: all 0.2s ease;
+    background-color: #F5F5F5;
+    border: none;
+  }
+  
+  i{
+      
+      font-size: 20px;
+      background-color: #F5F5F5;
+  }
+
 
 
 .table h1{
@@ -27,6 +44,8 @@ body {
     line-height: 48px;
     font-family: 'Nunito', sans-serif;
 }
+
+
 
 .icones{
     max-width: 10%;
@@ -105,8 +124,8 @@ form {
     border-color: #000000;
   }
   
-  input:focus + label {
-    transform: scale(1.05) translatey(-5%);
+  input:focus + button {
+    transform: scale(1.05) translatey(-2%);
     color: #000000;
   }
 
@@ -129,8 +148,9 @@ form {
   }
   
   .suggestion-list i {
-    margin-right: 1px;
+    margin-right: 12px;
     color: #F27121;
+    
   }
   
  
