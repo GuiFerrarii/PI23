@@ -24,28 +24,63 @@ body {
   text-align: center;
 }
 
-.info h1{
+/* .info h2{
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 27px;
   color: #434141;
-  float: left;
- 
-}
+  text-align: start;
+} */
 
-.info p{
+/* .info p{
   font-weight: 300;
   font-size: 20px;
   line-height: 27px;
-  text-align: center;
+  text-align: start;
   letter-spacing: 0.02em;
   color: #434141;
-  float: left;
-  margin-top: 0rem;
+  margin-top: 0.1rem;
+  border: 1px solid red;
+}
+
+#id2{
+  margin-top: 0.1rem;
+  text-align: start;
+  padding: 0rem;
+  
+} */
+
+.info{
+  text-align: start;
+}
+
+#title{
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight:500;
+  font-size: 20px;
+  line-height: 21px;
+  color: #434141;
  
 }
+
+.info p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: start;
+  letter-spacing: 0.02em;
+  color: #434141;
+  
+ 
+}
+
+/* #id3{
+  margin-top: 2.7rem;
+  margin-left: -2.9rem;
+} */
 
 .uc{
   position: absolute;
@@ -76,7 +111,7 @@ body {
 
 .uc img{
   margin-left: 8rem;
-  margin-top: -4rem;
+  margin-top: -1rem;
 }
 
 .uc p{
@@ -145,7 +180,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 30px;
 line-height: 41px;
-text-align: center;
+/* text-align: center; */
 letter-spacing: 0.02em;
 
 color: #434141;
