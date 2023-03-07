@@ -16,11 +16,7 @@ body {
     
 }
 
-.table table, th, td {
-    border: 1px solid black;
-    padding: 15px;
-    margin-left: 30%;
-  }
+
 
 .table h1{
     color: #434141;
@@ -38,7 +34,7 @@ body {
  
      
     display: flex;
-    margin-left: 51rem;
+    margin-left: 47rem;
     padding: 0rem;
     
     margin-top: -4rem;
