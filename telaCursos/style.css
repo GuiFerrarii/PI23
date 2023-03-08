@@ -18,6 +18,9 @@ body {
 
 
 
+
+
+
 /* .logout{
     background-color: #E7E7E7;
     border: 2px solid #F2F2F2;
@@ -200,6 +203,33 @@ span1{
 span{
     color: #005594;
 }
+
+.table table {
+	border-collapse: collapse;
+
+	margin-bottom: 2px;
+  margin-left: 5.2%;
+  width: 60%;
+  height: 460px;
+}
+
+.table table tr{
+  padding: 10px;
+}
+
+.table table td, table th {
+	border: 1px solid #000;
+	padding: 20px;
+	text-align: left;
+ 
+}
+
+.table table th {
+
+    border: none;
+    
+}
+
 
 nav .links {
     float: right;
