@@ -59,7 +59,7 @@ button {
 .table h1{
     color: #434141;
     margin-left: 5.2%;
-    margin-top: 4%;
+    margin-top: 3.5%;
     font-weight: 600;
     font-size: 35px;
     line-height: 48px;
@@ -240,6 +240,8 @@ nav .links a::before {
     transform: scaleX(0);
     transition: all 0.1s ease-in-out 0s;
 }
+
+
 nav .links a:hover::before {
     visibility: visible;
     transform: scaleX(1);
@@ -269,6 +271,8 @@ nav .icon-burger .line {
 
     .table h1{
        margin-top: 3%;
+       font-size: 35px;
+       margin-left: 19%;
     }
 
     input{
@@ -289,12 +293,17 @@ nav .icon-burger .line {
 
     button{
        left: 12rem;
+       margin-top: -1.6rem;
     }
 
     .icones{
         margin-left: 23rem;
-        margin-top: -6rem;
+        margin-top: -7rem;
         display: grid;
+    }
+
+    #add{
+        margin-left: 10px;
     }
 
     input {
