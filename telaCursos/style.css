@@ -16,7 +16,9 @@ body {
     
 }
 
-.logout{
+
+
+/* .logout{
     background-color: #E7E7E7;
     border: 2px solid #F2F2F2;
     border-radius: 10px;
@@ -25,13 +27,14 @@ body {
     height: 40px;
     margin-left: 95%;
     margin-top: 25%;
+    display: block;
     
 }
 
 .logout img{
     margin-left: 31%;
     margin-top: 17%;
-}
+} */
 
 
 button {
@@ -104,15 +107,8 @@ form {
 
   
   .input-group {
- 
-   
     max-width: 73%;
-    
- 
-    
-    
-    
-    
+
   }
   
  
@@ -235,7 +231,7 @@ nav .links a:hover {
 nav .links a::before {
     content: "";
     position: absolute;
-    bottom: 24px;
+    bottom: 26px;
     left: 18px;
     width: 33%;
     height: 3px;
@@ -269,14 +265,35 @@ nav .icon-burger .line {
     transition: all .5s ease-in-out;
 }
 @media screen and (max-width: 768px) {
+    
+
+    .table h1{
+       margin-top: 3%;
+    }
+
+    input{
+        font-size: 13px;
+        margin-left: 12%;
+    }
+
+    button{
+        margin-left: 18%;
+    }
+
+    input::placeholder{
+        font-size: 13px;
+    }
+
+
+   
 
     button{
        left: 12rem;
     }
 
     .icones{
-        margin-left: 25rem;
-        margin-top: 1rem;
+        margin-left: 23rem;
+        margin-top: -6rem;
         display: grid;
     }
 
