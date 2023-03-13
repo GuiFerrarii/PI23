@@ -1,63 +1,70 @@
-var all_apps = document.querySelectorAll('.app');
-var search = document.querySelector('#search');
-var listContainer = document.querySelector('.suggestion-list');
+const cell = document.querySelector('.clicar');
+cell.addEventListener('click', () => {
+    alert('Tabela clicada');
+});
 
-var app_list = [];
 
-for (let i = 0; i < all_apps.length; i++) {
-  let app_title = all_apps[i].querySelector('p').innerText.toLowerCase();
-  let app_icon = all_apps[i].querySelector('i').classList.value;
 
-  let obj = {};
-  obj.app_title = app_title;
-  obj.app_icon = app_icon;
+// var all_apps = document.querySelectorAll('.app');
+// var search = document.querySelector('#search');
+// var listContainer = document.querySelector('.suggestion-list');
 
-  app_list.push(obj);
-}
+// var app_list = [];
 
-search.addEventListener('keyup', generateAppList);
-search.addEventListener('blur', hideAppList);
+// for (let i = 0; i < all_apps.length; i++) {
+//   let app_title = all_apps[i].querySelector('p').innerText.toLowerCase();
+//   let app_icon = all_apps[i].querySelector('i').classList.value;
 
-function generateAppList(event) {
-  var fragment = document.createDocumentFragment();
+//   let obj = {};
+//   obj.app_title = app_title;
+//   obj.app_icon = app_icon;
 
-  var userInput = event.target.value.toLowerCase();
+//   app_list.push(obj);
+// }
 
-  if (userInput.length === 0) {
-    listContainer.classList.add('hidden');
-    return false;
-  }
+// search.addEventListener('keyup', generateAppList);
+// search.addEventListener('blur', hideAppList);
 
-  listContainer.innerHTML = '';
-  listContainer.classList.remove('hidden');
+// function generateAppList(event) {
+//   var fragment = document.createDocumentFragment();
 
-  var filteredList = app_list.filter(function (arr) {
-    return arr.app_title.includes(userInput);
-  });
+//   var userInput = event.target.value.toLowerCase();
 
-  if (filteredList.length === 0) {
-    let paragraph = document.createElement('p');
-    paragraph.innerText = 'Nenhum curso encontrado';
-    fragment.appendChild(paragraph);
-  }
+//   if (userInput.length === 0) {
+//     listContainer.classList.add('hidden');
+//     return false;
+//   }
 
-  else {
-    for (let i = 0; i < filteredList.length; i++) {
-      let paragraph = document.createElement('p');
-      let icon = document.createElement('i');
-      let span = document.createElement('span');
+//   listContainer.innerHTML = '';
+//   listContainer.classList.remove('hidden');
 
-      icon.classList.value = filteredList[i].app_icon;
-      span.innerText = filteredList[i].app_title;
-      paragraph.appendChild(icon);
-      paragraph.appendChild(span);
-      fragment.appendChild(paragraph);
-    }
-  }
+//   var filteredList = app_list.filter(function (arr) {
+//     return arr.app_title.includes(userInput);
+//   });
 
-  listContainer.appendChild(fragment);
-}
+//   if (filteredList.length === 0) {
+//     let paragraph = document.createElement('p');
+//     paragraph.innerText = 'Nenhum curso encontrado';
+//     fragment.appendChild(paragraph);
+//   }
 
-function hideAppList() {
-  listContainer.classList.add('hidden');
-}
+//   else {
+//     for (let i = 0; i < filteredList.length; i++) {
+//       let paragraph = document.createElement('p');
+//       let icon = document.createElement('i');
+//       let span = document.createElement('span');
+
+//       icon.classList.value = filteredList[i].app_icon;
+//       span.innerText = filteredList[i].app_title;
+//       paragraph.appendChild(icon);
+//       paragraph.appendChild(span);
+//       fragment.appendChild(paragraph);
+//     }
+//   }
+
+//   listContainer.appendChild(fragment);
+// }
+
+// function hideAppList() {
+//   listContainer.classList.add('hidden');
+// }
