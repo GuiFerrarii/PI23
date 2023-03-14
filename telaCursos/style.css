@@ -19,6 +19,196 @@ body {
     
 }
 
+
+
+button {
+  margin-top: -17px;
+  margin-left: -12px;
+  transform: translatey(-1%);
+  color: rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  background-color: #F5F5F5;
+  border: none;
+}
+
+i{
+    
+    font-size: 22px;
+    background-color: #F5F5F5;
+
+}
+
+
+/* Estilização input de pesquisa  */
+#cursos{
+  color: #434141;
+  margin-left: 5.2%;
+  margin-top: 3.5%;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 48px;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+
+.icones{
+  max-width: 10%;
+
+
+   
+  display: flex;
+  margin-left: 49rem;
+  padding: 0rem;
+  
+  margin-top: -4rem;
+}
+
+.icones img{
+  
+  display: block;
+  margin-left: 0.9rem;
+  padding: 0rem;
+ 
+
+}
+
+#add{
+  margin-top: -0.1rem;
+}
+
+
+
+.app {
+  display: none;
+}
+
+form {
+  max-width: 50%;
+  margin-top: 12rem;
+  margin-left: 6rem;
+}
+
+
+.input-group {
+  max-width: 73%;
+
+}
+
+
+input {
+  width: 97%;
+  height: 20px;
+  padding: 41px 22px 36px 22px;
+  outline: none;
+  font-size: 18px;
+  background: #F4F4F4;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  color: #434141;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.2s ease;
+
+}
+
+input::placeholder{
+  position: relative;
+  
+  color: #434141;
+}
+
+input:focus {
+  border-color: #000000;
+}
+
+input:focus + button {
+  transform: scale(1.05) translatey(-9%);
+  color: #000000;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: absolute;
+  top: 23.7%;
+  left: 38%;
+  padding: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 46px;
+  outline: none;
+  }
+  
+  button img {
+  margin-right: 500px;
+  }  
+
+
+  
+.linha{
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 1.5%;
+  margin-left: 5.2%;
+  
+
+  }
+
+.coluna-18 {
+  width: 20%;
+  
+}
+
+
+
+
+
+/* Estilos da tabela */
+table {
+border-collapse: separate;
+border-spacing:  0 8px;
+margin-bottom: 2px;
+margin-left: 5.2%;
+width: 100%;
+width: 1450px;
+height: 420px;
+border: 1px red solid;
+min-width: 300px;
+max-width: 80%;
+
+}
+
+table tr{
+padding: 10px;
+cursor: pointer;
+
+}
+table td{
+border-radius: 3px;
+}
+
+table td, table th a{
+border: 1px solid #000;
+padding: 10px;
+text-align: left;
+}
+
+table th {
+background-color: #f2f2f2;
+}
+
+.clicar{
+cursor: pointer;
+}
+
+  
+
+
+/* Estilo modal Detalhes  */
+
 .info{
   text-align: start;
 }
@@ -44,10 +234,6 @@ body {
  
 }
 
-/* #id3{
-  margin-top: 2.7rem;
-  margin-left: -2.9rem;
-} */
 
 .uc{
   position: absolute;
@@ -158,6 +344,9 @@ color: #434141;
 
 
 
+
+
+/* Estilo botão faq */
 .faq{
     display: block;
     margin-left: 96%;
@@ -174,116 +363,8 @@ img{
 
 
 
-
-button {
-    margin-top: -17px;
-    margin-left: -12px;
-    transform: translatey(-1%);
-    color: rgba(0, 0, 0, 0.08);
-    transition: all 0.2s ease;
-    background-color: #F5F5F5;
-    border: none;
-  }
-  
-  i{
-      
-      font-size: 22px;
-      background-color: #F5F5F5;
-  
-  }
-
-
-
- #cursos{
-    color: #434141;
-    margin-left: 5.2%;
-    margin-top: 3.5%;
-    font-weight: 600;
-    font-size: 35px;
-    line-height: 48px;
-    font-family: 'Nunito', sans-serif;
-}
-
-
-
-.icones{
-    max-width: 10%;
-
  
-     
-    display: flex;
-    margin-left: 49rem;
-    padding: 0rem;
-    
-    margin-top: -4rem;
-}
-
-.icones img{
-    
-    display: block;
-    margin-left: 0.9rem;
-    padding: 0rem;
-   
-
-}
-
- #add{
-    margin-top: -0.1rem;
-}
-
-
-
-.app {
-    display: none;
-  }
-
-form {
-    max-width: 50%;
-    margin-top: 12rem;
-    margin-left: 6rem;
-  }
-
-  
-  .input-group {
-    max-width: 73%;
-
-  }
-  
- 
-  input {
-    width: 97%;
-    height: 20px;
-    padding: 41px 22px 36px 22px;
-    outline: none;
-    font-size: 18px;
-    background: #F4F4F4;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    color: #434141;
-    font-weight: 500;
-    letter-spacing: 1px;
-    transition: all 0.2s ease;
-
-  }
-
-  input::placeholder{
-    position: relative;
-    
-    color: #434141;
-  }
-  
-  input:focus {
-    border-color: #000000;
-  }
-  
-  input:focus + button {
-    transform: scale(1.05) translatey(-9%);
-    color: #000000;
-  }
-
-
- 
-
+/* Estilo logo e nav  */
 nav {
     position: fixed;
     z-index: 10;
@@ -315,34 +396,6 @@ span1{
 span{
     color: #005594;
 }
-
-
-
-/* 
-.table table {
-	border-collapse: collapse;
-
-	margin-bottom: 2px;
-  margin-left: 5.2%;
-  width: 60%;
-  height: 460px;
-}
-.table table tr{
-  padding: 10px;
-}
-
-.table table td, table th {
-	border: 1px solid #000;
-	padding: 20px;
-	text-align: left;
- 
-}
-
-.table table th {
-
-    border: none;
-    
-} */
 
 
 nav .links {
@@ -535,76 +588,10 @@ nav .icon-burger .line {
     nav :checked ~ .icon-burger .line:nth-child(2) {
         opacity: 0;
     }
-}
 
-.linha{
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 1.5%;
-    margin-left: 5.2%;
     
- 
-    }
-
-.coluna-18 {
-    width: 20%;
-    
- }
-
-
-/* Estilo do botão */
-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  position: absolute;
-  top: 23.7%;
-  left: 38%;
-  padding: 10px;
-  cursor: pointer;
-  width: 50px;
-  height: 46px;
-  outline: none;
 }
 
-button img {
-  margin-right: 5px;
-}  
-  
-
-/* Estilos da tabela */
-table {
-	border-collapse: separate;
-  border-spacing:  0 8px;
-	margin-bottom: 2px;
-  margin-left: 5.2%;
-	width: 180%;
-  width: 1450px;
-  height: 420px;
-}
-
-table tr{
-  padding: 10px;
-  cursor: pointer;
-}
-table td{
-  border-radius: 3px;
-}
-
-table td, table th a{
-	border: 1px solid #000;
-	padding: 10px;
-	text-align: left;
-}
-
-table th {
-	background-color: #f2f2f2;
-}
-
-.clicar{
-  cursor: pointer;
-}
 
 
 
