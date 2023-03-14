@@ -79,6 +79,8 @@ body {
 .uc img{
   margin-left: 8rem;
   margin-top: -1rem;
+  height: 35px;
+  width: 35px;
 }
 
 .uc p{
