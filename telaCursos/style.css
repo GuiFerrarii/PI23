@@ -54,9 +54,6 @@ i{
 
 .icones{
   max-width: 10%;
-
-
-   
   display: flex;
   margin-left: 49rem;
   padding: 0rem;
@@ -175,7 +172,6 @@ margin-left: 5.2%;
 width: 100%;
 width: 1450px;
 height: 420px;
-border: 1px red solid;
 min-width: 300px;
 max-width: 80%;
 
@@ -337,8 +333,10 @@ color: #434141;
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.20s 0s, transform 0.25s;
   backdrop-filter: blur(1px);
+  
+  
   
 }
 
@@ -353,8 +351,11 @@ color: #434141;
     margin-top: 2%;
 }
 
-img{
+#bola{
   margin-left: 5.1%;
+  margin-top: -2rem;
+  display: block;
+  
   
 }
 
