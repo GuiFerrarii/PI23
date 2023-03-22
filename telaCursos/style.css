@@ -109,6 +109,19 @@ input {
 
 }
 
+tbody th{
+  position: sticky;
+}
+
+
+.rolagem {
+  overflow-y: scroll;
+  height: 475px;
+  margin-right: 7%;
+  border-radius: 10px;
+} 
+
+
 input::placeholder{
   position: relative;
   
@@ -155,7 +168,7 @@ button {
   }
 
 .coluna-18 {
-  width: 20%;
+  width: 19%;
   
 }
 
@@ -166,16 +179,18 @@ button {
 /* Estilos da tabela */
 table {
 border-collapse: separate;
+table-layout: fixed;
 border-spacing:  0 8px;
 margin-bottom: 2px;
 margin-left: 5.2%;
-width: 100%;
-width: 1450px;
-height: 420px;
-min-width: 300px;
-max-width: 80%;
+width: 80%;
+height: 89px;
+max-width: 75%;
+min-height: 89px;
+overflow: auto;
 
 }
+
 
 table tr{
 padding: 10px;
@@ -184,6 +199,8 @@ cursor: pointer;
 }
 table td{
 border-radius: 3px;
+width: 100%;
+min-width: 100px;
 }
 
 table td, table th a{
@@ -213,15 +230,15 @@ cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-weight:500;
-  font-size: 20px;
+  font-size: 23px;
   line-height: 21px;
-  color: #434141;
+  color: #000000;
  
 }
 
 .info p {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 21px;
   text-align: start;
   letter-spacing: 0.02em;
@@ -312,12 +329,13 @@ font-size: 30px;
 line-height: 41px;
 /* text-align: center; */
 letter-spacing: 0.02em;
+margin-left: 34%;
 
 color: #434141;
 }
 .close-button {
   float: right;
-  width: 1.5rem;
+  width: 1.3rem;
   font-size: 1.2em;
   line-height: 1;
   padding: 0 .2em .15em;
@@ -345,19 +363,36 @@ color: #434141;
 
 
 /* Estilo botão faq */
-.faq{
+ .faq{
     display: block;
     margin-left: 96%;
-    margin-top: 2%;
+    
 }
 
 #bola{
-  margin-left: 5.1%;
+  margin-right: 2%;
   margin-top: -2rem;
   display: block;
   
   
+} 
+
+footer{
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 4%;
+  width: 100%;
+  height: 3rem;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
 
 
 
@@ -466,6 +501,13 @@ nav .icon-burger .line {
 }
 @media screen and (max-width: 768px) {
 
+  table{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  
+
    #bola{
     display: none;
   }
@@ -510,7 +552,7 @@ nav .icon-burger .line {
     }
 
     button{
-        margin-left: 15%;
+        margin-left: 8%;
     }
 
     i{
@@ -527,12 +569,12 @@ nav .icon-burger .line {
    
 
     button{
-       left: 12rem;
-       margin-top: -1.6rem;
+       left: 16rem;
+       margin-top: -2.6rem;
     }
 
     .icones{
-        margin-left: 23rem;
+        margin-left: 24.5rem;
         margin-top: -7rem;
         display: grid;
     }
@@ -542,7 +584,7 @@ nav .icon-burger .line {
     }
 
     input {
-        width: 100%;
+        width: 15rem;
     height: 20px;
     margin-left: 1rem;
     margin-top: -4rem;
@@ -592,10 +634,4 @@ nav .icon-burger .line {
 
     
 }
-
-
-
-
-
-
 
